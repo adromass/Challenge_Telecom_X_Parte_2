@@ -2,16 +2,17 @@
 
 ## Introducción
 
-En este proyecto se desarrolló un análisis predictivo para identificar clientes con mayor probabilidad de cancelar sus servicios en **Telecom X**. La tarea consistió en preparar los datos, entrenar modelos de clasificación y analizar los factores más relevantes que influyen en la cancelación, con el objetivo de generar insights estratégicos que permitan a la empresa implementar acciones de retención.
+Este proyecto tuvo como objetivo desarrollar un modelo predictivo para identificar clientes con mayor probabilidad de cancelar sus servicios en **Telecom X**. El análisis incluyó preprocesamiento de datos, entrenamiento de modelos de clasificación, evaluación de métricas clave y extracción de insights estratégicos para guiar acciones de retención.
 
-El trabajo incluyó las siguientes etapas principales:
+Se trabajó con variables categóricas codificadas, normalización de variables numéricas y balanceo de clases mediante **SMOTE**. Para la predicción se entrenaron modelos de **Regresión Logística** y **Random Forest**, evaluando su desempeño con métricas como exactitud, precisión, sensibilidad y F1-score, y analizando la importancia de las variables para interpretar los resultados.
 
-1. **Preprocesamiento de datos:** se codificaron variables categóricas, se normalizaron variables numéricas y se aplicó **SMOTE** para balancear la clase de cancelación, asegurando que los modelos tuvieran datos representativos de ambas clases.  
-2. **Análisis de correlación y selección de variables:** se identificaron relaciones entre las variables y se eliminaron problemas de multicolinealidad, destacando las más relevantes para la predicción.  
-3. **Entrenamiento de modelos de clasificación:** se utilizaron **Regresión Logística** y **Random Forest** para predecir la probabilidad de cancelación de los clientes.  
-4. **Evaluación de modelos:** se calcularon métricas como exactitud, precisión, sensibilidad y F1-score, además de analizar las matrices de confusión para comprender el desempeño de cada modelo.  
-5. **Interpretación de resultados:** se analizaron los coeficientes de la Regresión Logística y la importancia de variables en Random Forest para identificar los factores críticos que afectan la cancelación de clientes.  
+Los hallazgos más relevantes muestran que los **cargos mensuales y totales**, las **cuentas diarias** y la **antigüedad del cliente** son los factores más determinantes para la cancelación. Además, el **tipo de contrato**, los **servicios adicionales** y el **método de pago** influyen en la retención. Estos resultados permiten priorizar estrategias de fidelización y personalización de planes para minimizar la pérdida de clientes.
 
-Los principales hallazgos indican que variables como **cargo mensual**, **cuentas diarias**, **cargo total** y **antigüedad en meses** son determinantes para predecir la cancelación. Asimismo, factores contractuales y servicios adicionales contribuyen a la retención. Este análisis proporciona una base sólida para que Telecom X implemente estrategias de prevención y fidelización de clientes.
+## Librerías y herramientas utilizadas
+
+El proyecto se implementó utilizando librerías de análisis de datos, visualización y Machine Learning, incluyendo: `pandas`, `numpy`, `matplotlib`, `seaborn`, `plotly.express`, `MinMaxScaler` para normalización, `SMOTE` para balance de clases, `train_test_split` para partición de datos, `variance_inflation_factor` para multicolinealidad, modelos de sklearn como `DummyClassifier`, `DecisionTreeClassifier` y métricas de evaluación como `accuracy_score`, `precision_score`, `recall_score`, `f1_score` y curvas ROC.
+
+Este enfoque permitió construir un pipeline robusto, interpretativo y orientado a la toma de decisiones estratégicas de la empresa.
+
 
 ### Adrian Massella
