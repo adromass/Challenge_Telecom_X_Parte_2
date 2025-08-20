@@ -14,4 +14,4 @@ El trabajo incluyó las siguientes etapas principales:
 
 Los principales hallazgos indican que variables como **cargo mensual**, **cuentas diarias**, **cargo total** y **antigüedad en meses** son determinantes para predecir la cancelación. Asimismo, factores contractuales y servicios adicionales contribuyen a la retención. Este análisis proporciona una base sólida para que Telecom X implemente estrategias de prevención y fidelización de clientes.
 
-###Adrian Massella
+### Adrian Massella
